@@ -1,0 +1,12 @@
+<div>
+    <div class="headerCards">
+        <h2>Cartas</h2>
+        <sort-button (sort-cards)="handleSort($event)"></sort-button>
+    </div>
+    <div class="cardsContainer">
+        @for (card of cards; track $index) {
+            <cards-element #cardsElement [royaleCards]="card" [text2]="texto"></cards-element>
+        }
+    </div>
+    
+</div>

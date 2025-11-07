@@ -1,0 +1,8 @@
+
+.navbar {
+    height: 170vh;
+    background-image: url('https://i.pinimg.com/736x/a7/36/94/a73694f2be9248b59f0325d6fe1357e6.jpg');
+    background-size: cover;
+    padding: 10px;
+    overflow-x: hidden;
+}

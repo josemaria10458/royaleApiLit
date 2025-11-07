@@ -1,0 +1,18 @@
+.cardsContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* flex-direction: row; */
+
+}
+
+.headerCards{
+    padding: 15px;
+    display: flex;
+    /* gap: 250px; */
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 40px;
+}
