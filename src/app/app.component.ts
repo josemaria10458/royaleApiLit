@@ -2,12 +2,13 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, ViewChild } from '@angul
 import { HeaderComponent } from './components/header/header.component.js';
 import { CardsComponent } from "./components/cards/cards.component";
 import { Router } from '@angular/router';
+import { TableComponent } from './components/table/table.component.js';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, CardsComponent],
+  imports: [HeaderComponent, CardsComponent, TableComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA ] 

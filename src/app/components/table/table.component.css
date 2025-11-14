@@ -1,0 +1,10 @@
+.header {
+    margin: 40px;
+    padding: 15px;
+}
+.tableContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+}
+
