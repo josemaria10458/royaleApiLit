@@ -1,14 +1,13 @@
 import { LitElement, html, css } from 'lit';
 import './tag-type-element.js'
+import { count } from 'rxjs';
 
 export class TableElement extends LitElement {
     static styles = css`
         :host { display: block; width: 100%; height: auto; font-family: Arial, sans-serif;}
         .table-container{
-            /* width: 100%; */
-            height: 800px;
-            /* overflow-x: hidden; */
-
+            height: auto;
+            margin: 30px
         }
 
         .cabecera {
@@ -38,25 +37,13 @@ export class TableElement extends LitElement {
 
     static properties = {
         clans: { type: Array},
+        count: { type: Number },
+        clansSlice: { type: Array}
     };
 
     constructor() {
         super();
-        this.clans = []
-        console.log(this.clans);
-        
-    }
-
-    connectedCallback() {
-        super.connectedCallback();
-        // Escuchar el evento cuando el componente se monta
-        this.addEventListener('sort-cards', this.handleSort);
-    }
-
-    disconnectedCallback() {
-        super.disconnectedCallback();
-        // Limpiar el listener cuando el componente se desmonta
-        this.removeEventListener('sort-cards', this.handleSort);
+        this.clans = [];
     }
 
     render() {
@@ -73,10 +60,10 @@ export class TableElement extends LitElement {
                         <th>Donaciones</th>
                     </thead>
                     <td colspan="7">
-                        <hr> <!-- La línea horizontal se inserta aquí -->
+                        <hr>
                     </td>
                     <tbody>
-                        ${this.clans.map((clan)=>{
+                        ${this.clans.map((clan)=> {
                                 return html`
                                     <tr>
                                         <td class="col">${clan.name}</td>

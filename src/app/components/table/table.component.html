@@ -3,10 +3,9 @@
         <h2>Clanes</h2>
     </div>
     <div class="tableContainer">
-        <!-- @for (card of cards; track $index) {
-            <cards-element #cardsElement [royaleCards]="card" [text2]="texto"></cards-element>
-        } -->
         <table-element [clans]="clans"></table-element>
+        <pagination-element [numberofElements]="totalClans" (current-page)="onPageChange($event)"></pagination-element>
     </div>
+      
     
 </div>

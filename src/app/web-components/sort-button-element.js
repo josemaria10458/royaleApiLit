@@ -5,14 +5,14 @@ export class SortButtonElement extends LitElement {
         :host { display: block; width: 100%; height: auto; font-family: Arial, sans-serif;}
         .sortButton {
             width: 150px;
-            height: 40px; 
+            /* height: 40px;  */
             background-color: #2c95e0;
             color: white;
             border-radius: 15px;
             border-color: transparent;
             font-size: 16px;
             font-weight: bold;
-            padding: 3px;
+            padding: 4px;
         }
         .container {
             display: flex;

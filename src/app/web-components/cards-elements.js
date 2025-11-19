@@ -10,7 +10,18 @@ export class CardsElement extends LitElement {
             flex-direction: row;
             /* background-color: this.royaleCards.rarity */
         }
-        .card-container { width: 300px; margin: 20px auto; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius:10px; background:#fff; }
+        .card-container { 
+            width: 300px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            border-radius:10px; 
+            background:#fff;
+            transition: transform 0.3s ease;
+        }
+        .card-container:hover {
+            transform: scale(1.1);
+        }
         .card-container.common { background: #fde3be; }
         .card-container.rare { background: #dbeafe; }       
         .card-container.epic { background: #ede9fe; }
@@ -24,16 +35,12 @@ export class CardsElement extends LitElement {
     `;
 
     static properties = {
-        text2: { type: String },
         royaleCards: { type: Object},
     };
 
     constructor() {
         super();
-        this.text2 = '';
         this.royaleCards = {};
-        console.log('royale', this.royaleCards);
-        // this.handleSort = this.handleSort.bind(this);
     }
 
     connectedCallback() {

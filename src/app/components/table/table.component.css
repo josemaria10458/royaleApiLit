@@ -5,6 +5,12 @@
 .tableContainer{
     width: 100%;
     height: auto;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination {
+    width: 100%;
+    height: auto;
 }
 
