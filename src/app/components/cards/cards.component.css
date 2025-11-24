@@ -3,13 +3,19 @@
     height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* flex-direction: row; */
+}
+
+.dragAndDropSection{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin: 40px;
 }
 
 .headerCards{
     padding: 15px;
     display: flex;
-    /* gap: 250px; */
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 20px;

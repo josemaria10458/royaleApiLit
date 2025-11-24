@@ -62,7 +62,7 @@ export class CardsElement extends LitElement {
                     <strong>${this.royaleCards.name}</strong>
                     <div>Rarity: ${this.royaleCards.rarity}</div>
                     <div>Elixir cost: ${this.royaleCards.elixirCost}</div>
-                    <img src="${this.royaleCards.iconUrls?.medium || ''}" alt="${this.royaleCards.name}" class="imageCard" />
+                    <img src="${this.royaleCards.iconUrls?.medium || ''}" alt="${this.royaleCards.name}" class="imageCard" draggable="true"/>
                 </div>
                     
         `;

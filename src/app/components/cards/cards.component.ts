@@ -1,7 +1,8 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, ElementRef, OnInit, ViewChild } from '@angular/core';
 import '../../web-components/cards-elements.js';
 import '../../web-components/sort-button-element.js';
-import { Card, CardItem } from '../../interfaces/card.model.js';
+import '../../web-components/drag-and-drop-elements.js';
+import { CardItem } from '../../interfaces/card.model.js';
 import { GetCardsService } from '../../shared/services/get-cards.service.js';
 
 

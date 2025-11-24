@@ -1,8 +1,13 @@
 <div>
+    <div class="dragAndDropSection">
+        <h2>Mazo</h2>
+        <drag-element></drag-element>
+    </div>
     <div class="headerCards">
         <h2>Cartas</h2>
         <sort-button (sort-cards)="handleSort($event)"></sort-button>
     </div>
+
     <div class="cardsContainer">
         @for (card of cards; track $index) {
             <cards-element #cardsElement [royaleCards]="card"></cards-element>
